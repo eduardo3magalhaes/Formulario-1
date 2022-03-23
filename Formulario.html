@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario 1.css" media="screen">
+    <title>Opnião</title>
+</head>
+<body>
+    
+    <div>
+      <h1 id="titulo">Pesquisa Gamer</h1>
+       <p id="subtitulo">Complete suas informações</p>
+       <br>
+    </div>
+    <form>
+       <fieldset class="grupo">
+          <div class="campo">
+              <label for="Nome"><strong>Nome</strong></label>
+              <input type="text" name="Nome" id="Nome" required>
+          </div>
+
+          <div class="campo">
+               <label for="sobrenome"><strong>Sobrenome</strong></label>
+               <input type="text" name="Sobrenome" id="Sobrenome" required>
+          </div>
+
+       </fieldset>
+
+          <div class="campo">
+           <label for="Email"><strong>Email</strong></label>
+           <input type="email" name="Email" id="Email" required>
+
+          </div>
+
+          <div class="campo">
+              <label><strong>Qual próximo jogo voçe irá jogar?</strong></label>
+              <label>
+              <input type="radio" name="jogos" value="Elden Rig">Elden Ring
+              </label>
+              <label>
+              <input type="radio" name="jogos" value="GT7">GT7
+              </label>
+              <label>
+              <input type="radio" name="jogos" value="Tunic">Tunic
+              </label>
+          </div>
+           
+          <div class="campo">
+              <label for="Jogabilidade"><strong>Sua Jogabilidade</strong></label>
+              <select id="Jogabilidade">
+                <option selected disabled value="">Selecione</option>
+                  <option>Easy</option>
+                  <option>Medium</option>
+                  <option>Hard</option>
+              </select>
+          </div>
+          <fieldset class="grupo">
+          <div id="check">
+              <label><strong></strong>Quais dos jogos abaixo voçê ja jogou:</label><br><br>
+              <input type="checkbox" id="jogo1" name="jogo1" value="FIFA">
+              <label for="jogo1">FIFA</label>
+              <input type="checkbox" id="jogo2" name="jogo2" value="NBA2K">
+              <label for="jogo2">NBA2K</label>
+              <input type="checkbox" id="jogo3" name="jogo3" value="Celest">
+              <label for="jogo2">Celest</label>
+              <input type="checkbox" id="jogo4" name="jogo4" value="Gran Turismo">
+              <label for="jogo2">Gran Turismo</label>
+              <input type="checkbox" id="jogo5" name="jogo5" value="MK11">
+              <label for="jogo2">MK11</label>
+              <input type="checkbox" id="jogo6" name="jogo6" value="Tomb Raider">
+              <label for="jogo2">Tomb Raider</label>
+              <input type="checkbox" id="jogo5" name="jogo5" value="Daimon Soul">
+              <label for="jogo2">Daimon Soul</label>
+          </div>
+          </fieldset>
+          <div class="campo">
+              <br>
+              <label for="experiencia gamer"><strong>Conte um pouco da sua experiência gamer:</strong></label>
+              <textarea row="6" style="width: 26em" id="experiencia gamer" name="experiencia gamer"></textarea>
+          </div>
+          <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+    </form>
+  </body>
+</html>
